@@ -13,135 +13,217 @@
 
 <body>
 
-    <section class="weather-content">
-        <section class="weather">
+    <main>
+        <article class="weather-content">
+            <section class="weather">
 
-            <article class="form">
-                <h3>Confira o clima de uma cidade</h3>
+                <article class="form">
+                    <h3>Confira o clima de uma cidade</h3>
 
-                <section class="form-input-container">
-                    <input type="text" placeholder="Digite o nome da cidade" id="city-input">
-                    <button id="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    <section class="form-input-container">
+                        <input type="text" placeholder="Digite o nome da cidade" id="city-input">
+                        <button id="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </section>
+
+                </article>
+
+                <article id="weather-data" class="info">
+                    <h2>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span id="city">Caieiras</span>
+                        <img src="https://flagsapi.com/BR/flat/64.png" alt="bandeira país" id="country" />
+                    </h2>
+
+                    <p id="temperature" class="temperature">
+                        <span>0</span>&deg;C
+                    </p>
+
+                    <section class="description-container">
+                        <p id="description" class="description">Ensolarado</p>
+                        <img src="http://openweathermap.org/img/wn/01d.png" alt="condições do tempo"
+                            id="weather-icon" />
+                    </section>
+                </article>
+            </section>
+
+            <section class="weather-info">
+                <section class="temp-max">
+                    <article>
+
+                        <h2 class="max-info">
+                            <p>Máxima</p>
+                        </h2>
+
+                        <p class="temp-info" id="temp-max">
+                            <i class="fa-solid fa-temperature-arrow-up"></i>
+                            <span>0</span>&deg; C
+                        </p>
+                    </article>
                 </section>
 
-            </article>
+                <section class="temp-min">
+                    <article>
+                        <h2 class="min-info">
+                            <p>Mínima</p>
+                        </h2>
 
-            <article id="weather-data" class="info">
-                <h2>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span id="city">Caieiras</span>
-                    <img src="https://flagsapi.com/BR/flat/64.png" alt="bandeira país" id="country" />
-                </h2>
-
-                <p id="temperature" class="temperature">
-                    <span>0</span>&deg;C
-                </p>
-
-                <section class="description-container">
-                    <p id="description" class="description">Ensolarado</p>
-                    <img src="http://openweathermap.org/img/wn/01d.png" alt="condições do tempo" id="weather-icon" />
+                        <p class=" temp-info" id="temp-min">
+                            <i class="fa-solid fa-temperature-arrow-down"></i>
+                            <span>0</span>&deg; C
+                        </p>
+                    </article>
                 </section>
-            </article>
-        </section>
 
-        <section class="weather-info">
-            <section class="temp-max">
-                <article>
+                <section class="feels-like">
+                    <article>
+                        <h2 class="sensacao-info">
+                            <p>Sensação</p>
+                        </h2>
 
-                    <h2 class="max-info">
-                        <p>Máxima</p>
-                    </h2>
+                        <p class="temp-info" id="sensacao">
+                            <i class="fa-solid fa-temperature-three-quarters"></i>
+                            <span>0</span>&deg; C
+                        </p>
+                    </article>
+                </section>
 
-                    <p class="temp-info" id="temp-max">
-                        <i class="fa-solid fa-temperature-arrow-up"></i>
-                        <span>0</span>&deg; C
-                    </p>
-                </article>
+                <section class="humidity">
+                    <article>
+                        <h2 class="humidade-info">
+                            <p>Humidade</p>
+                        </h2>
+
+                        <p class="temp-info" id="humidity">
+                            <i class="fa-solid fa-droplet"></i>
+                            <span>0%</span>
+                        </p>
+                    </article>
+                </section>
+
+                <section class="windy">
+                    <article>
+                        <h2 class="windy-info">
+                            <p>Vento</p>
+                        </h2>
+
+                        <p class="temp-info" id="windy-speed">
+                            <i class="fa-solid fa-wind"></i>
+                            <span>0 Km/h</span>
+                        </p>
+                    </article>
+                </section>
+
             </section>
+        </article>
 
-            <section class="temp-min">
-                <article>
-                    <h2 class="min-info">
-                        <p>Mínima</p>
-                    </h2>
+        <article class="temp-hour-content">
 
-                    <p class=" temp-info" id="temp-min">
-                        <i class="fa-solid fa-temperature-arrow-down"></i>
-                        <span>0</span>&deg; C
-                    </p>
-                </article>
-            </section>
+            <section class="temp-hour">
 
-            <section class="feels-like">
-                <article>
-                    <h2 class="sensacao-info">
-                        <p>Sensação</p>
-                    </h2>
+                <article class="temp-hour-card">
+                    <h3 id="time-hour">00:00</h3>
 
-                    <p class="temp-info" id="sensacao">
-                        <i class="fa-solid fa-temperature-three-quarters"></i>
-                        <span>0</span>&deg; C
-                    </p>
-                </article>
-            </section>
+                    <p class="temp-card-temp" id="temp-hour"><span>25</span>&deg; C</p>
 
-            <section class="humidity">
-                <article>
-                    <h2 class="humidade-info">
-                        <p>Humidade</p>
-                    </h2>
-
-                    <p class="temp-info" id="humidity">
+                    <p class="temp-card-humidity" id="temp-hour-humidity">
                         <i class="fa-solid fa-droplet"></i>
-                        <span>0%</span>
+                        <span>0 %</span>
                     </p>
+
+                    <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem" id="temp-hour-icon">
+                    <p class="temp-card-descricao" id="temp-hour-description">Ensolarado</p>
                 </article>
+
+                <article class="temp-hour-card">
+                    <h3 id="time-hour2">00:00</h3>
+
+                    <p class="temp-card-temp" id="temp-hour2"><span>25</span>&deg; C</p>
+
+                    <p class="temp-card-humidity" id="temp-hour-humidity2">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>0 %</span>
+                    </p>
+
+                    <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem" id="temp-hour-icon2">
+                    <p class="temp-card-descricao" id="temp-hour-description2">Ensolarado</p>
+                </article>
+
+                <article class="temp-hour-card">
+                    <h3 id="time-hour3">00:00</h3>
+
+                    <p class="temp-card-temp" id="temp-hour3"><span>25</span>&deg; C</p>
+
+                    <p class="temp-card-humidity" id="temp-hour-humidity3">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>0 %</span>
+                    </p>
+
+                    <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem" id="temp-hour-icon3">
+                    <p class="temp-card-descricao" id="temp-hour-description3">Ensolarado</p>
+                </article>
+
+                <article class="temp-hour-card">
+                    <h3 id="time-hour4">00:00</h3>
+
+                    <p class="temp-card-temp" id="temp-hour4"><span>25</span>&deg; C</p>
+
+                    <p class="temp-card-humidity" id="temp-hour-humidity4">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>0 %</span>
+                    </p>
+
+                    <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem" id="temp-hour-icon4">
+                    <p class="temp-card-descricao" id="temp-hour-description4">Ensolarado</p>
+                </article>
+
+                <article class="temp-hour-card">
+                    <h3 id="time-hour5">00:00</h3>
+
+                    <p class="temp-card-temp" id="temp-hour5"><span>25</span>&deg; C</p>
+
+                    <p class="temp-card-humidity" id="temp-hour-humidity5">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>0 %</span>
+                    </p>
+
+                    <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem" id="temp-hour-icon5">
+                    <p class="temp-card-descricao" id="temp-hour-description5">Ensolarado</p>
+                </article>
+
+                <article class="temp-hour-card">
+                    <h3 id="time-hour6">00:00</h3>
+
+                    <p class="temp-card-temp" id="temp-hour6"><span>25</span>&deg; C</p>
+
+                    <p class="temp-card-humidity" id="temp-hour-humidity6">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>0 %</span>
+                    </p>
+
+                    <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem" id="temp-hour-icon6">
+                    <p class="temp-card-descricao" id="temp-hour-description6">Ensolarado</p>
+                </article>
+
+                <article class="temp-hour-card">
+                    <h3 id="time-hour7">00:00</h3>
+
+                    <p class="temp-card-temp" id="temp-hour7"><span>25</span>&deg; C</p>
+
+                    <p class="temp-card-humidity" id="temp-hour-humidity7">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>0 %</span>
+                    </p>
+
+                    <img src="http://openweathermap.org/img/wn/01d.png" alt="Imagem" id="temp-hour-icon7">
+                    <p class="temp-card-descricao" id="temp-hour-description7">Ensolarado</p>
+                </article>
+
             </section>
 
-            <section class="windy">
-                <article>
-                    <h2 class="windy-info">
-                        <p>Vento</p>
-                    </h2>
-
-                    <p class="temp-info" id="windy-speed">
-                        <i class="fa-solid fa-wind"></i>
-                        <span>0 Km/h</span>
-                    </p>
-                </article>
-            </section>
-
-            <!-- <section class="sunrise">
-                <article>
-
-                    <h2 class="sunrise-info">
-                        <p>Nascer do sol</p>
-                    </h2>
-
-                    <p class="temp-info">
-                        <i class="fa-regular fa-sun"></i>
-                        <span>31</span>
-                    </p>
-                </article>
-            </section>
-
-            <section class="sunset">
-                <article>
-                    <h2 class="sunset-info">
-                        <p>Pôr do sol</p>
-                    </h2>
-
-                    <p class="temp-info">
-                        <i class="fa-regular fa-sun"></i>
-                        <span>31</span>
-                    </p>
-                </article>
-            </section> -->
-
-        </section>
-    </section>
+        </article>
+    </main>
 
 
     <script src="assets/js/scripts.js"></script>
