@@ -30,7 +30,6 @@ body {
   padding: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
-
 }
 
 /* FORMULARIO PESQUISA */
@@ -214,4 +213,79 @@ body {
 .temp-card-descricao {
   font-weight: 500;
   font-size: 1.2rem;
+}
+
+@media (max-width: 319px) {
+  .weather-content {
+    flex-direction: column;
+  }
+
+  .weather-info {
+    grid-template-columns: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 320px) {
+  .weather-content {
+    flex-direction: column;
+  }
+
+  .weather-info {
+    grid-template-columns: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 375px) {
+  .weather-content {
+    flex-direction: column;
+  }
+
+  .weather-info {
+    grid-template-columns: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 425px) {
+  .weather-content {
+    flex-direction: column;
+  }
+
+  .weather-info {
+    grid-template-columns: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 450px) {
+  .weather-content {
+    flex-direction: column;
+  }
+
+  .weather-info {
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .weather-content {
+    flex-direction: row;
+  }
+  .weather-info {
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .weather-content {
+    flex-direction: row;
+  }
+  .weather-info {
+    grid-template-columns: auto auto auto;
+    /* gap: 40px; */
+  }
 }
